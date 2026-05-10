@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fullscreen_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        android:minHeight="800dp">
+
+        <!-- Ornamen Atas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✦  ✦  ✦"
+            android:textColor="#F4D03F"
+            android:textSize="20sp"
+            android:letterSpacing="0.3"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Icon Masjid -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🕌"
+            android:textSize="80sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Judul Utama -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ"
+            android:textColor="#F4D03F"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nama Sholat -->
+        <TextView
+            android:id="@+id/tvPrayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🕌 Waktu Dzuhur"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Countdown -->
+        <TextView
+            android:id="@+id/tvCountdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏰ Adzan dalam 5 menit lagi"
+            android:textColor="#AED6F1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/countdown_background"
+            android:padding="12dp"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Garis Pemisah -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F4D03F"
+            android:alpha="0.4"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Judul Hadis -->
+        <TextView
+            android:id="@+id/tvHadisTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📖 Keutamaan Sholat Berjamaah"
+            android:textColor="#F4D03F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Konten Hadis -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/hadis_card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvHadisContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""Sholat berjamaah lebih utama dari sholat sendirian sebanyak dua puluh tujuh derajat.""
+                android:textColor="#F8F9FA"
+                android:textSize="17sp"
+                android:lineSpacingExtra="6dp"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvHadisSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="— HR. Bukhari &amp; Muslim"
+                android:textColor="#F4D03F"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <!-- Doa -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اَللّٰهُمَّ اجْعَلْنَا مِنَ الْمُصَلِّيْنَ\n\"Ya Allah, jadikanlah kami termasuk orang-orang yang mendirikan sholat\""
+            android:textColor="#AED6F1"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Garis Pemisah -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F4D03F"
+            android:alpha="0.4"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol Tutup -->
+        <Button
+            android:id="@+id/btnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="✓ Saya Akan Segera Sholat"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0D1B2A"
+            android:backgroundTint="#F4D03F"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Ornamen Bawah -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✦  ✦  ✦"
+            android:textColor="#F4D03F"
+            android:textSize="20sp"
+            android:letterSpacing="0.3" />
+
+    </LinearLayout>
+</ScrollView>

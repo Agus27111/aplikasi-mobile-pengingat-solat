@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SholatReminder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#F4D03F</item>
+        <item name="colorPrimaryVariant">#D4AC0D</item>
+        <item name="colorOnPrimary">#0D1B2A</item>
+        <item name="android:windowBackground">#0D1B2A</item>
+        <item name="android:statusBarColor">#0D1B2A</item>
+        <item name="android:navigationBarColor">#0D1B2A</item>
+    </style>
+
+    <style name="Theme.FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/fullscreen_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">#0D1B2A</item>
+        <item name="colorPrimary">#F4D03F</item>
+        <item name="colorOnPrimary">#0D1B2A</item>
+    </style>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B2A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🕌"
+            android:textSize="64sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengingat Sholat"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#F4D03F"
+            android:fontFamily="serif"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifikasi 5 Menit Sebelum Adzan"
+            android:textSize="14sp"
+            android:textColor="#AEB6BF"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Card Input Lokasi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Lokasi Anda"
+                android:textColor="#F4D03F"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Kota (contoh: Jakarta)"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8C8D"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/etCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Negara (contoh: Indonesia)"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8C8D"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <!-- Tombol Ambil Jadwal -->
+        <Button
+            android:id="@+id/btnFetch"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔄 Ambil Jadwal Sholat"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0D1B2A"
+            android:backgroundTint="#F4D03F"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Tombol Izin -->
+        <Button
+            android:id="@+id/btnEnable"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🔔 Aktifkan Izin Notifikasi"
+            android:textSize="14sp"
+            android:textColor="#F4D03F"
+            android:backgroundTint="#1A2A3A"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬆️ Masukkan kota dan tekan tombol di atas"
+            android:textColor="#AEB6BF"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Jadwal Sholat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tvPrayerTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jadwal sholat akan tampil di sini..."
+                android:textColor="#D5D8DC"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
